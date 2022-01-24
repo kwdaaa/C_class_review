@@ -19,14 +19,8 @@ class Customer:
         full_name = self.full_name()
         age = str(self.age)
         # indent = f"{full_name.ljust(18)}{age.ljust(5)}{self.entry_fee()}"
-        indent = \t(f"{full_name}{age}{self.entry_fee()}")
+        indent = f"{full_name} \t {age} \t {self.entry_fee()}"
         return indent
-
-
-#
-# >>> l = ['a', 'b', 'c', 'd', 'e']
-# >>> print('\t'.join([str(i) for i in l]))
-# a	b	c	d	e
 
 
 ken = Customer(first_name="Ken", family_name="Tanaka", age=15)
