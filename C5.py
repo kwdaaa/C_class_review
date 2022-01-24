@@ -5,11 +5,11 @@ class Customer:
         self.age = age
 
     def entry_fee(self):
-        if 0 <= self.age < 3:
+        if 0 <= self.age <= 3:
             return 0
-        elif 3 <= self.age < 20:
+        elif 3 < self.age < 20:
             return 1000
-        elif 20 <= self.age < 60:
+        elif 20 <= self.age < 65:
             return 1500
         elif 61 <= self.age < 75:
             return 1200
@@ -17,7 +17,7 @@ class Customer:
             return 500
 
 
-ken = Customer(first_name="Ken", family_name="Tanaka", age=15)
+ken = Customer(first_name="Ken", family_name="Tanaka", age=75)
 print(ken.entry_fee())
 
 tom = Customer(first_name="Tom", family_name="Ford", age=57)
